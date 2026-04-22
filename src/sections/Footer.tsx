@@ -4,6 +4,7 @@ import { content } from "../content"
 
 export default function Footer() {
   const c = content.founder.contact
+  const si = content.studioInstagram
   return (
     <footer className="bg-ocean-900 text-white py-16 px-6 md:px-12 lg:px-16">
       <div className="max-w-7xl mx-auto">
@@ -56,7 +57,7 @@ export default function Footer() {
               </a>
 
               <a
-                href={c.instagram}
+                href={si}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-11 h-11 rounded-full bg-white/10 hover:bg-azure-600 flex items-center justify-center transition-all duration-300"

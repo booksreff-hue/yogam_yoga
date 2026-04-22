@@ -72,8 +72,10 @@ export default function Gallery() {
           </button>
         </div>
 
-        <FadeIn className="mt-8 text-center text-sm text-ocean-600">
-          Replace the gallery images in <code className="font-mono">public/images</code> whenever you’re ready.
+        <FadeIn className="mt-8 text-center">
+          <a href="https://www.instagram.com/yogamyogashala?igsh=ZjMwY256bTRybjM5" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-medium border-b-4 border-purple-700 hover:from-pink-600 hover:to-purple-700 transition-all duration-200 active:border-b-2 active:translate-y-0.5">
+            Follow us here to see more!
+          </a>
         </FadeIn>
       </div>
     </section>

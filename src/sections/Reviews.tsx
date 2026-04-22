@@ -28,35 +28,11 @@ const reviews: Review[] = [
     text: "Genuine, Professional and Intensive Yoga training. Pravin Sir conducts yogic training here in conjunction with breathing and Pranayama to train both the body and mind. It is located inside a historical premises of Shinde Chatri as well whichvadds to the charm.",
     relative_time_description: "3 months ago",
   },
-  {
+{
     author_name: "Anil Khatri",
     rating: 5,
-    text: "Yogam Yoga class has the extra energy due to Pravin Sir's dedication. He is an excellent yoga teacher who guides us and corrects our postures and breathing pattern. His knowledge of yoga, focus on the minute details and individual attention makes the yoga class a pleasure to attend. When i joined the class in Sept 2024 for the 6.30 am batch I was not sure, if i will be consistent as i was not an early riser, but thereafter I felt pristine and energetic, also Shinde Chatri temple's beautiful environment is a bliss. I admire his discipline even for the 4 Prayers he recites every day. While there are several moving parts in life, my Yoga is constant, thanks to Praveen Sir's guidance and encouragement. Best wishes always!!",
+    text: "Yogam Yoga class has the extra energy due to Pravin Sir's dedication. He is an excellent yoga teacher who guides us and corrects our postures and breathing pattern. His knowledge of yoga, focus on the minute details and individual attention makes the yoga class a pleasure to attend. When i joined the class in Sept 2024 for the 6.30 am batch I was not sure, if i will be consistent as I was not an early riser, but thereafter I felt pristine and energetic, also Shinde Chatri temple's beautiful environment is a bliss. I admire his discipline even for the 4 Prayers he recites every day. While there are several moving parts in life, my Yoga is constant, thanks to Praveen Sir's guidance and encouragement. Best wishes always!!",
     relative_time_description: "10 months ago",
-  },
-  {
-    author_name: "kalpana sharma",
-    rating: 5,
-    text: "Pravin Sir's yoga classes have been a game changer for me. Initially, my lazy nature and low energy levels made me sceptical about starting yoga. But, under Sir's guidance, I have discovered a new me. It has improved my energy levels, enhanced overall health, increased flexibility, and strength and better focus. Sir's expertise, patience, and encouraging nature create a nurturing environment. His classes are meticulously designed to cater to diverse needs. I wholeheartedly recommend Yogam Yoga Shala to anyone seeking a holistic and supportive yoga experience. Thank you Pravin Sir.",
-    relative_time_description: "a year ago",
-  },
-  {
-    author_name: "Delshad Irani",
-    rating: 5,
-    text: "This class has been my first formal experience with yoga and I joined it specifically for health reasons. I come from a background of lifting weights and to make this shift was life altering. But Pravin sir has made the transition for me excellently smooth so much so that i have started enjoying yoga more than the gym and do not want to go back to weights at all! He is patient, very knowledgeable and guides us individually during the class. I love our meditation sessions as well which leave me wanting for more. Overall my experience has been enriching and I would definitely recommend people to join this class.",
-    relative_time_description: "3 years ago",
-  },
-  {
-    author_name: "Manoj Sethi",
-    rating: 5,
-    text: "Yogam Yoga Shala, helmed by the esteemed Pravin Sir, has been a transformative experience for me. Having joined as a beginner four months ago, grappling with severe back pain and posture issues, I found in Pravin Sir not just a yoga instructor but a true healer who uses the art of yoga therapeutically. He tailors his approach with a precision that speaks volumes about his expertise and compassion for his students' individual needs. When I started, we began with therapy yoga—a gentle yet profoundly effective regimen that was aimed directly at alleviating my pain and correcting my posture. Each pose and sequence were selected with care to ensure gradual and safe progression. Pravin Sir's attentive guidance made a noticeable difference early on. Through consistent practice under his guidance, my back pain has significantly reduced, and my posture has improved remarkably.",
-    relative_time_description: "a year ago",
-  },
-  {
-    author_name: "Vishal Bansal",
-    rating: 5,
-    text: "I have been practicing yoga from Sultan and Austin Sir here. Both are very knowledgeable and dedicated towards yoga. Their keen observation towards my asanas has drastically improved my yoga postures. They consistently motivates me to push my limit and strive for improvement. Their sessions are very enjoyable and rewarding. I highly recommend everyone to join it.",
-    relative_time_description: "a year ago",
   },
 ]
 

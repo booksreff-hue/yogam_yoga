@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import FadeIn from "../components/FadeIn"
-import { Music, Sparkles, Heart, ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const atmosphereImages = [
   "/assets/atmosphere/atmosphere_bg.png",
@@ -93,11 +93,7 @@ export default function Atmosphere() {
 
           {/* Foreground content wrapper */}
           <div className="relative z-10 p-8 md:p-12">
-            <div className="flex justify-center mb-8">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-aqua-400 to-azure-500 flex items-center justify-center shadow-lg text-white">
-                <Sparkles className="w-10 h-10" />
-              </div>
-            </div>
+            <div className="mb-20"></div>
 
             <div className="space-y-6 text-center">
               <p className="text-lg md:text-xl text-white leading-relaxed font-bold" style={{ textShadow: "0px 0px 8px rgba(0,0,0,1), 0px 0px 15px rgba(0,0,0,0.8)" }}>
@@ -105,11 +101,9 @@ export default function Atmosphere() {
               </p>
 
               <div className="flex items-center justify-center gap-4 py-6">
-                <Music className="w-6 h-6 text-white" style={{ filter: "drop-shadow(0px 0px 8px rgba(0,0,0,1))" }} />
                 <p className="text-base md:text-lg text-white leading-relaxed max-w-2xl font-bold" style={{ textShadow: "0px 0px 8px rgba(0,0,0,1), 0px 0px 15px rgba(0,0,0,0.8)" }}>
                   We begin and end every session with prayers and mantra recitation to establish a deep connection with the discipline of Yoga.
                 </p>
-                <Music className="w-6 h-6 text-white" style={{ filter: "drop-shadow(0px 0px 8px rgba(0,0,0,1))" }} />
               </div>
 
               <div className="pt-6 border-t border-white/30">
@@ -119,17 +113,7 @@ export default function Atmosphere() {
               </div>
             </div>
 
-            <div className="flex justify-center mt-8 gap-4">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-azure-500 to-aqua-500 flex items-center justify-center shadow-md text-white backdrop-blur-sm">
-                <Heart className="w-6 h-6" />
-              </div>
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-aqua-400 to-azure-500 flex items-center justify-center shadow-md text-white backdrop-blur-sm">
-                <Sparkles className="w-6 h-6" />
-              </div>
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-azure-400 to-aqua-500 flex items-center justify-center shadow-md text-white backdrop-blur-sm">
-                <Music className="w-6 h-6" />
-              </div>
-            </div>
+            <div className="mt-12"></div>
           </div>
         </div>
       </div>

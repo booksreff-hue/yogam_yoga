@@ -30,11 +30,16 @@ export default function Hero({ ready }: Props) {
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#FFFFB8]/60 via-[#FFFFB8]/40 to-[#FFFFB8]/60" />
-        <img 
-          src="/assets/hero/patanjali.png" 
-          alt="Patanjali" 
-          className="absolute -left-2 md:left-[-2%] bottom-0 w-32 md:w-60 lg:w-72 h-auto object-contain z-10 opacity-90"
-        />
+        <div className="absolute -left-2 md:left-[-2%] bottom-8 md:bottom-12 z-10 flex flex-col items-center">
+          <img 
+            src="/assets/hero/patanjali.png" 
+            alt="Patanjali" 
+            className="w-32 md:w-60 lg:w-72 h-auto object-contain opacity-90"
+          />
+          <span className="font-title text-black/80 text-sm md:text-lg lg:text-xl font-bold mt-1">
+            Maharishi Patanjali
+          </span>
+        </div>
         <img 
           src="/assets/hero/om_hero.png" 
           alt="Om" 

@@ -30,7 +30,7 @@ export default function About() {
                 e.preventDefault()
                 scrollToHash(href)
               }}
-              className="rounded-full bg-[#B8F9FF] px-4 py-2 md:px-6 md:py-2.5 text-black font-semibold border border-azure-300/50 hover:bg-[#A8E4F2] transition shadow-sm"
+              className="rounded-full bg-[#B8F9FF] px-4 py-2 md:px-6 md:py-2.5 text-black font-semibold border-b-4 border-azure-500/60 hover:bg-[#A8E4F2] transition shadow-lg hover:shadow-xl hover:shadow-azure-400/40 active:border-b-2 active:translate-y-0.5 active:shadow-md drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)]"
             >
               {label}
             </a>

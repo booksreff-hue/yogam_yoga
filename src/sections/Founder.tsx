@@ -32,7 +32,7 @@ export default function Founder() {
                 <div className="relative">
                   <div className="flex flex-col md:flex-row gap-6 items-start">
                     <img
-                      src="/assets/teachers/pravin_pfp.jpg"
+                      src="/assets/teachers/pravin_pfp.jpeg"
                       alt={`${f.name} portrait`}
                       className="w-full md:w-40 h-48 md:h-40 object-cover rounded-2xl shadow-md"
                       loading="lazy"
@@ -48,6 +48,18 @@ export default function Founder() {
                           </div>
                         ))}
                       </div>
+
+                      {f.contact.instagram && (
+                        <a
+                          href={f.contact.instagram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-medium border-b-4 border-purple-700 hover:from-pink-600 hover:to-purple-700 transition-all duration-200 active:border-b-2 active:translate-y-0.5"
+                        >
+                          <Instagram className="w-4 h-4" />
+                          Follow on Instagram
+                        </a>
+                      )}
 
                       <p className="mt-4 text-ocean-700 italic">"{f.quote}"</p>
 
@@ -129,7 +141,7 @@ function TeacherCard({ teacher }: { teacher: Teacher }) {
                 href={teacher.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-medium hover:from-pink-600 hover:to-purple-700 transition-all duration-200"
+                className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-medium border-b-4 border-purple-700 hover:from-pink-600 hover:to-purple-700 transition-all duration-200 active:border-b-2 active:translate-y-0.5"
               >
                 <Instagram className="w-4 h-4" />
                 Follow on Instagram

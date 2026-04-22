@@ -22,6 +22,7 @@ export const content: {
       mapsUrl: string
     }
   }
+  studioInstagram: string
   teachers: {
     name: string
     title: string
@@ -67,10 +68,11 @@ export const content: {
     contact: {
       phoneDisplay: "+91 98811 44997",
       email: "yogamyogashala@gmail.com",
-      instagram: "https://www.instagram.com/your_yogi_sultan?igsh=d3BidzY1MDVid2Fv",
+      instagram: "https://www.instagram.com/pravinjagtappersonal?igsh=d284czg3ZHhuaHZ6",
       mapsUrl: "https://maps.app.goo.gl/ZSwUGvWQ1e8PBVxe7"
     }
   },
+  studioInstagram: "https://www.instagram.com/yogamyogashala?igsh=ZjMwY256bTRybjM5",
   teachers: [
     {
       name: "Sultan",
