@@ -99,7 +99,7 @@ const handler: Handler = async function (event): Promise<HandlerResponse> {
   try {
     const apiKey = process.env.GOOGLE_API_KEY
     const placeId = process.env.GOOGLE_PLACE_ID
-    const urlParams = new URLSearchParams(event.queryStringParameters?. ?? "")
+    const urlParams = new URLSearchParams(event.queryStringParameters ?? "")
     const minRating = urlParams.get("minRating") ? Number(urlParams.get("minRating")) : 4.5
 
     if (!apiKey || !placeId) {
