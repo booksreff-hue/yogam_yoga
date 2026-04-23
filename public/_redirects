@@ -1,3 +1,2 @@
 /api/whatsapp /.netlify/functions/whatsapp 200
-/api/reviews /.netlify/functions/reviews 200
 /api/health /.netlify/functions/health 200

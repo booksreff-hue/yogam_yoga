@@ -1,7 +1,6 @@
 import express from "express"
 import cors from "cors"
 import dotenv from "dotenv"
-import { fetchGoogleReviews } from "./services/googleReviews"
 import { sendOwnerWhatsApp } from "./services/whatsapp"
 
 dotenv.config()
@@ -11,27 +10,6 @@ app.use(cors())
 app.use(express.json({ limit: "64kb" }))
 
 app.get("/api/health", (_req, res) => res.json({ ok: true }))
-
-app.get("/api/reviews", async (req, res) => {
-  try {
-    const apiKey = process.env.GOOGLE_API_KEY
-    const placeId = process.env.GOOGLE_PLACE_ID
-    const minRating = req.query.minRating ? Number(req.query.minRating) : 4.5
-
-    if (!apiKey || !placeId) {
-      return res.status(501).json({
-        reviews: [],
-        fetchedAt: new Date().toISOString(),
-        error: "Missing GOOGLE_API_KEY or GOOGLE_PLACE_ID on the server.",
-      })
-    }
-
-    const payload = await fetchGoogleReviews({ apiKey, placeId, minRating })
-    res.json(payload)
-  } catch (e: any) {
-    res.status(500).json({ reviews: [], fetchedAt: new Date().toISOString(), error: e?.message ?? "reviews error" })
-  }
-})
 
 app.post("/api/whatsapp", async (req, res) => {
   try {
