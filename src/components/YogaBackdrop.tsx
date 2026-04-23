@@ -33,6 +33,9 @@ const poses: Pose[] = [
     { src: "/assets/site-background/yog6.png", side: "left", top: "3780px", offsetX: "-20px", size: "450px", rotate: "5deg",   opacity: 0.70 },
     { src: "/assets/site-background/yog2.png", side: "left", top: "4410px", offsetX: "-50px", size: "480px", rotate: "-8deg",  opacity: 0.66, flip: true },
     { src: "/assets/site-background/yog4.png", side: "left", top: "5040px", offsetX: "-30px", size: "440px", rotate: "11deg",  opacity: 0.72 },
+    { src: "/assets/site-background/yog7.png", side: "left", top: "6300px", offsetX: "-40px", size: "460px", rotate: "-5deg",  opacity: 0.70 },
+    { src: "/assets/site-background/yog8.png", side: "left", top: "6930px", offsetX: "-35px", size: "440px", rotate: "8deg",   opacity: 0.68, flip: true },
+    { src: "/assets/site-background/yog9.png", side: "left", top: "7560px", offsetX: "-45px", size: "450px", rotate: "-7deg",  opacity: 0.72 },
 
     // ── RIGHT GUTTER ─────────────────────────────────────────────────
     { src: "/assets/site-background/yog2.png", side: "right", top: "315px",  offsetX: "-35px", size: "480px", rotate: "8deg",   opacity: 0.72 },
@@ -44,6 +47,9 @@ const poses: Pose[] = [
     { src: "/assets/site-background/yog3.png", side: "right", top: "4095px", offsetX: "-55px", size: "480px", rotate: "-7deg",  opacity: 0.66 },
     { src: "/assets/site-background/yog5.png", side: "right", top: "4725px", offsetX: "-30px", size: "470px", rotate: "4deg",   opacity: 0.70, flip: true },
     { src: "/assets/site-background/yog6.png", side: "right", top: "5355px", offsetX: "-25px", size: "490px", rotate: "6deg",   opacity: 0.74 },
+    { src: "/assets/site-background/yog9.png", side: "right", top: "5985px", offsetX: "-40px", size: "450px", rotate: "-8deg",  opacity: 0.72 },
+    { src: "/assets/site-background/yog4.png", side: "right", top: "6615px", offsetX: "-35px", size: "460px", rotate: "5deg",   opacity: 0.68, flip: true },
+    { src: "/assets/site-background/yog8.png", side: "right", top: "7245px", offsetX: "-45px", size: "440px", rotate: "-10deg", opacity: 0.70 },
 ]
 
 export default function YogaBackdrop() {
