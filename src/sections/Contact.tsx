@@ -1,5 +1,4 @@
 import React, { useMemo, useState } from "react"
-import FadeIn from "../components/FadeIn"
 import { Send } from "lucide-react"
 import emailjs from "@emailjs/browser"
 import { content } from "../content"
@@ -95,13 +94,13 @@ export default function Contact() {
   return (
     <section id="contact" className="relative py-16 md:py-24 lg:py-32 px-4 md:px-12 lg:px-16 overflow-hidden">
       <div className="relative z-10 max-w-3xl mx-auto">
-        <FadeIn className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title text-ocean-900 mb-4 md:mb-6 tracking-tight">Get In Touch</h2>
           <p className="text-xl md:text-2xl font-title text-azure-700 italic">Have questions or ready to start your yoga journey? We'd love to hear from you.</p>
           <div className="w-20 h-1 bg-gradient-to-r from-aqua-500 to-azure-600 mx-auto rounded-full mt-6" />
-        </FadeIn>
+        </div>
 
-        <FadeIn className="flex flex-col gap-6 rounded-xl py-6 border border-aqua-200/60 shadow-xl bg-[#b8f9ff] backdrop-blur-sm">
+        <div className="flex flex-col gap-6 rounded-xl py-6 border border-aqua-200/60 shadow-xl bg-[#b8f9ff] backdrop-blur-sm">
           <div className="px-6 pb-2">
             <div className="font-semibold text-2xl text-ocean-900 font-title">Contact Us</div>
             <div className="text-ocean-700 text-base">
@@ -190,7 +189,7 @@ export default function Contact() {
               </div>
             </form>
           </div>
-        </FadeIn>
+        </div>
       </div>
     </section>
   )

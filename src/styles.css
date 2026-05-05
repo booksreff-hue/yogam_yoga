@@ -4,13 +4,22 @@
 
 :root { color-scheme: light; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  /* Prevent scroll-anchoring from auto-correcting scroll position when
+     compositing layers are promoted/demoted (e.g. opacity 0→1 on
+     backdrop-blur elements near the footer). Without this, the smooth
+     scroll-behavior makes those micro-corrections visibly animated. */
+  overflow-anchor: none;
+}
 
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #FFF78A;
+  /* Reserve scrollbar space so it never causes a width reflow */
+  scrollbar-gutter: stable;
 }
 
 /* Gentle selection */
