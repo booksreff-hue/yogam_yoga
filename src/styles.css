@@ -31,7 +31,6 @@ body {
 @media (hover: none) and (pointer: coarse) {
   html {
     scroll-behavior: auto;
-    font-size: 120%;
   }
 }
 
