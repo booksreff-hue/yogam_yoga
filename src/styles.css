@@ -5,12 +5,8 @@
 :root { color-scheme: light; }
 
 html {
-  scroll-behavior: smooth;
-  /* Prevent scroll-anchoring from auto-correcting scroll position when
-     compositing layers are promoted/demoted (e.g. opacity 0→1 on
-     backdrop-blur elements near the footer). Without this, the smooth
-     scroll-behavior makes those micro-corrections visibly animated. */
-  overflow-anchor: none;
+  /* scroll-behavior is applied per-call via JS scrollIntoView in About.tsx */
+  scroll-behavior: auto;
 }
 
 body {
@@ -18,8 +14,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #FFF78A;
-  /* Reserve scrollbar space so it never causes a width reflow */
   scrollbar-gutter: stable;
+  touch-action: manipulation;
+  overscroll-behavior: contain;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@supports (padding: env(safe-area-inset-bottom)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 /* Gentle selection */

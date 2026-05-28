@@ -1,5 +1,5 @@
 import React from "react"
-import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from "lucide-react"
+import { Instagram, MapPin, Phone, Mail } from "lucide-react"
 import { content } from "../content"
 
 export default function Footer() {
@@ -47,16 +47,6 @@ export default function Footer() {
             <h4 className="text-lg font-title mb-4">Follow Us</h4>
             <div className="flex gap-4 justify-center md:justify-start">
               <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-11 h-11 rounded-full bg-white/10 hover:bg-azure-600 flex items-center justify-center transition-all duration-300"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-
-              <a
                 href={si}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,16 +54,6 @@ export default function Footer() {
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-11 h-11 rounded-full bg-white/10 hover:bg-azure-600 flex items-center justify-center transition-all duration-300"
-                aria-label="X (Twitter)"
-              >
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>

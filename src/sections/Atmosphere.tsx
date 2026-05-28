@@ -12,19 +12,6 @@ export default function Atmosphere() {
         </FadeIn>
 
         <FadeIn>
-          <div className="relative rounded-2xl shadow-xl overflow-hidden border border-aqua-200/60">
-            <video
-              className="w-full h-auto"
-              controls
-              preload="metadata"
-            >
-              <source src="/assets/atmosphere/yogam shala final.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </FadeIn>
-
-        <FadeIn className="mt-12">
           <div 
             className="relative rounded-2xl shadow-xl overflow-hidden border border-aqua-200/60"
             style={{

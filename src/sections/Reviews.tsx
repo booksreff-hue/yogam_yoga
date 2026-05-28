@@ -123,35 +123,37 @@ export default function Reviews() {
             →
           </button>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {currentReviews.map((r, idx) => (
-              <FadeIn key={`${r.author_name}-${idx}`} delay={idx * 0.03} className="flex flex-col gap-6 rounded-xl py-4 md:py-6 border border-aqua-200/60 bg-white/85 backdrop-blur-sm shadow-md hover:shadow-lg transition-all duration-300">
-                <div className="p-4 md:p-8">
-                  <div className="flex gap-1 mb-4" aria-label={`${r.rating} out of 5 stars`}>
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-5 h-5 ${i < r.rating ? "fill-azure-500 text-azure-500" : "text-azure-200"}`}
-                      />
-                    ))}
-                  </div>
-
-                  <p className="text-ocean-700 leading-relaxed mb-6 text-base md:text-lg italic">
-                    "{r.text}"
-                  </p>
-
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-aqua-400 to-azure-500 flex items-center justify-center shadow-md overflow-hidden">
-                      <span className="text-white font-semibold text-sm">{r.author_name.slice(0, 1).toUpperCase()}</span>
+          <div className="relative overflow-hidden md:min-h-[48rem]">
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {currentReviews.map((r, idx) => (
+                <FadeIn key={`${r.author_name}-${idx}`} delay={idx * 0.03} className="flex flex-col gap-6 rounded-xl py-4 md:py-6 border border-aqua-200/60 bg-white/85 backdrop-blur-sm shadow-md hover:shadow-lg transition-all duration-300">
+                  <div className="p-4 md:p-8">
+                    <div className="flex gap-1 mb-4" aria-label={`${r.rating} out of 5 stars`}>
+                      {Array.from({ length: 5 }).map((_, i) => (
+                        <Star
+                          key={i}
+                          className={`w-5 h-5 ${i < r.rating ? "fill-azure-500 text-azure-500" : "text-azure-200"}`}
+                        />
+                      ))}
                     </div>
-                    <div className="min-w-0">
-                      <p className="font-semibold text-ocean-900 truncate">{r.author_name}</p>
-                      <p className="text-sm text-ocean-600">{r.relative_time_description}</p>
+
+                    <p className="text-ocean-700 leading-relaxed mb-6 text-base md:text-lg italic">
+                      "{r.text}"
+                    </p>
+
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-aqua-400 to-azure-500 flex items-center justify-center shadow-md overflow-hidden">
+                        <span className="text-white font-semibold text-sm">{r.author_name.slice(0, 1).toUpperCase()}</span>
+                      </div>
+                      <div className="min-w-0">
+                        <p className="font-semibold text-ocean-900 truncate">{r.author_name}</p>
+                        <p className="text-sm text-ocean-600">{r.relative_time_description}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </FadeIn>
-            ))}
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -163,13 +165,16 @@ export default function Reviews() {
                 setCurrentSet(idx)
                 setIsAutoPlaying(false)
               }}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                idx === currentSet
-                  ? "bg-azure-500 w-8"
-                  : "bg-azure-200 hover:bg-azure-300"
-              }`}
+              className="flex items-center justify-center w-11 h-11 rounded-full transition-all duration-300"
               aria-label={`Go to review set ${idx + 1}`}
-            />
+              style={{ background: "transparent" }}
+            >
+              <span className={`rounded-full transition-all duration-300 ${
+                idx === currentSet
+                  ? "w-8 h-3 bg-azure-500"
+                  : "w-3 h-3 bg-azure-200 hover:bg-azure-300"
+              }`} />
+            </button>
           ))}
         </div>
 

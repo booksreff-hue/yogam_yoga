@@ -28,13 +28,13 @@ export default function Founder() {
               </p>
 
               {/* ── Pravin ── */}
-              <div className="relative rounded-2xl bg-[#ffffe6] p-6 border border-aqua-200/60 overflow-hidden">
+              <div className="relative rounded-2xl bg-[#ffffe6] p-4 sm:p-6 border border-aqua-200/60 overflow-hidden">
                 <div className="relative">
-                  <div className="flex flex-col md:flex-row gap-6 items-start">
+                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
                     <img
                       src="/assets/teachers/pravin_pfp.jpeg"
                       alt={`${f.name} portrait`}
-                      className="w-full md:w-40 h-48 md:h-40 object-cover rounded-2xl shadow-md"
+                      className="w-32 sm:w-36 md:w-40 aspect-square object-cover rounded-2xl shadow-md"
                       loading="lazy"
                     />
                     <div className="flex-1">
@@ -107,25 +107,25 @@ function TeacherCard({ teacher }: { teacher: Teacher }) {
   const [imgError, setImgError] = useState(false)
 
   return (
-    <div className="relative rounded-2xl bg-[#ffffe6] p-6 border border-aqua-200/60 overflow-hidden">
+    <div className="relative rounded-2xl bg-[#ffffe6] p-4 sm:p-6 border border-aqua-200/60 overflow-hidden">
       <div className="relative">
-        <div className="flex flex-col md:flex-row gap-6 items-start">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
           {!imgError ? (
             <img
               src={teacher.image}
               alt={`${teacher.name} portrait`}
-              className="w-full md:w-40 h-48 md:h-40 object-cover rounded-2xl shadow-md"
+              className="w-32 sm:w-36 md:w-40 aspect-square object-cover rounded-2xl shadow-md"
               loading="lazy"
               onError={() => setImgError(true)}
             />
           ) : (
-            <div className="w-full md:w-40 h-48 md:h-40 rounded-2xl shadow-md bg-gradient-to-br from-aqua-100 to-azure-100 flex items-center justify-center flex-shrink-0">
-              <User className="w-16 h-16 text-azure-400" />
+            <div className="w-32 sm:w-36 md:w-40 aspect-square rounded-2xl shadow-md bg-gradient-to-br from-aqua-100 to-azure-100 flex items-center justify-center flex-shrink-0">
+              <User className="w-12 h-12 sm:w-16 sm:h-16 text-azure-400" />
             </div>
           )}
 
           <div className="flex-1">
-            <div className="text-2xl font-title text-ocean-900">{teacher.name}</div>
+            <div className="text-xl sm:text-2xl font-title text-ocean-900">{teacher.name}</div>
             <div className="text-ocean-600 mt-1">{teacher.title}</div>
 
             <div className="flex flex-wrap gap-2 mt-3">
