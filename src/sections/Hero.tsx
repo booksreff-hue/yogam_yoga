@@ -78,17 +78,17 @@ export default function Hero({ ready }: Props) {
               )}
             </div>
 
-            <div className="font-sanskrit text-lg sm:text-lg md:text-lg text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] space-y-1 sm:space-y-2 font-bold px-4">
+            <div className="font-sanskrit text-2xl md:text-2xl text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] space-y-2 font-bold px-4">
               <p>{mantraBlocks.om}</p>
               <p>{mantraBlocks.line1}</p>
             </div>
 
-            <div className="mt-6 font-sanskrit text-lg sm:text-lg md:text-lg text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-4">
+            <div className="mt-6 font-sanskrit text-xl md:text-xl text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-4">
               <p>{mantraBlocks.a1}</p>
               <p>{mantraBlocks.a2}</p>
             </div>
 
-            <div className="mt-6 font-sanskrit text-lg sm:text-lg md:text-lg text-black/80 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-4">
+            <div className="mt-6 font-sanskrit text-xl md:text-xl text-black/80 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-4">
               <p>{mantraBlocks.p1}</p>
               <p>{mantraBlocks.p2}</p>
             </div>
