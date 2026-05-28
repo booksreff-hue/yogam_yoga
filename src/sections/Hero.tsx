@@ -21,7 +21,7 @@ export default function Hero({ ready }: Props) {
   }, [])
 
   return (
-    <header id="home" className="relative flex flex-col min-h-[68dvh] overflow-hidden">
+    <header id="home" className="relative flex flex-col min-h-[78dvh] overflow-hidden">
       {/* Hero background */}
       <div className="absolute inset-0 z-0" style={{ backgroundColor: "#FFFFB8" }}>
         <img 
