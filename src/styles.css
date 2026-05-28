@@ -51,3 +51,18 @@ body {
 .yoga-backdrop-images img {
   animation: none !important;
 }
+
+/* Scale backdrop images down on smaller screens so they don't overflow */
+@media (max-width: 1023px) {
+  .yoga-backdrop-images img {
+    max-width: 28vw !important;
+    height: auto !important;
+  }
+}
+
+/* Increase base font size on mobile for desktop-mode readability */
+@media (max-width: 767px) {
+  html {
+    font-size: 17px;
+  }
+}

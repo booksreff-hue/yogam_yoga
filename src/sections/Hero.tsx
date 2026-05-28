@@ -30,13 +30,13 @@ export default function Hero({ ready }: Props) {
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#FFFFB8]/60 via-[#FFFFB8]/40 to-[#FFFFB8]/60" />
-        <div className="absolute -left-1 sm:left-[-2%] bottom-6 sm:bottom-12 z-10 flex flex-col items-center max-w-[35vw] sm:max-w-none">
+        <div className="absolute -left-2 md:left-[-2%] bottom-8 md:bottom-12 z-10 flex flex-col items-center max-w-[30vw] sm:max-w-none">
           <img 
             src="/assets/hero/patanjali.png" 
             alt="Patanjali" 
-            className="w-20 sm:w-40 md:w-60 lg:w-72 h-auto object-contain opacity-90"
+            className="w-24 sm:w-40 md:w-60 lg:w-72 h-auto object-contain opacity-90"
           />
-          <span className="font-title text-black/80 text-[10px] sm:text-lg lg:text-xl font-bold mt-0.5 sm:mt-1 leading-tight text-center">
+          <span className="font-title text-black/80 text-sm sm:text-lg lg:text-xl font-bold mt-1 leading-tight text-center">
             Maharishi Patanjali
           </span>
         </div>
@@ -48,7 +48,7 @@ export default function Hero({ ready }: Props) {
       </div>
 
       {/* HERO CONTENT */}
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-start text-center px-2 sm:px-4 pt-4 sm:pt-8">
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-start text-center px-4 pt-8">
         <motion.div
           className="w-full max-w-6xl mx-auto space-y-6"
           initial={{ opacity: 0, y: 40, scale: 0.985 }}
@@ -60,9 +60,9 @@ export default function Hero({ ready }: Props) {
           }}
         >
           {/* Logo and mantras */}
-          <div className="mt-6 sm:mt-20 mx-auto max-w-4xl flex flex-col items-center">
+          <div className="mt-12 mx-auto max-w-4xl flex flex-col items-center">
             {/* Logo now placed inside the mantra box */}
-            <div className="mb-4 sm:mb-6 h-28 md:h-36 flex items-center justify-center">
+            <div className="mb-6 h-28 md:h-36 flex items-center justify-center">
               {ready ? (
                 <motion.img
                   layoutId="yogam-logo"
@@ -78,17 +78,17 @@ export default function Hero({ ready }: Props) {
               )}
             </div>
 
-            <div className="font-sanskrit text-sm sm:text-base md:text-lg text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] space-y-1 sm:space-y-2 font-bold px-3 sm:px-4">
+            <div className="font-sanskrit text-lg sm:text-lg md:text-lg text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] space-y-1 sm:space-y-2 font-bold px-4">
               <p>{mantraBlocks.om}</p>
               <p>{mantraBlocks.line1}</p>
             </div>
 
-            <div className="mt-4 sm:mt-6 font-sanskrit text-sm sm:text-base md:text-lg text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-3 sm:px-4">
+            <div className="mt-6 font-sanskrit text-lg sm:text-lg md:text-lg text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-4">
               <p>{mantraBlocks.a1}</p>
               <p>{mantraBlocks.a2}</p>
             </div>
 
-            <div className="mt-4 sm:mt-6 font-sanskrit text-sm sm:text-base md:text-lg text-black/80 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-3 sm:px-4">
+            <div className="mt-6 font-sanskrit text-lg sm:text-lg md:text-lg text-black/80 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-4">
               <p>{mantraBlocks.p1}</p>
               <p>{mantraBlocks.p2}</p>
             </div>

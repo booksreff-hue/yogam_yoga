@@ -71,7 +71,7 @@ export default function YogaBackdrop() {
                         loading="lazy"
                         decoding="async"
                         draggable={false}
-                        className="absolute select-none hidden lg:block"
+                        className="absolute select-none"
                         style={{
                             ...sideStyle,
                             top: pose.top,
