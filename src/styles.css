@@ -31,6 +31,7 @@ body {
 @media (hover: none) and (pointer: coarse) {
   html {
     scroll-behavior: auto;
+    font-size: 110%;
   }
 }
 
@@ -52,8 +53,8 @@ body {
   animation: none !important;
 }
 
-/* Scale backdrop images down on smaller screens so they don't overflow */
-@media (max-width: 1023px) {
+/* Scale backdrop images down on touch devices so they don't overflow */
+@media (hover: none) and (pointer: coarse) {
   .yoga-backdrop-images img {
     max-width: 28vw !important;
     height: auto !important;
