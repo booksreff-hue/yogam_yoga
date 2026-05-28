@@ -7,6 +7,7 @@
 html {
   /* scroll-behavior is applied per-call via JS scrollIntoView in About.tsx */
   scroll-behavior: auto;
+  font-size: 118%;
 }
 
 body {
