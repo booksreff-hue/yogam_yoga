@@ -21,7 +21,7 @@ export default function Hero({ ready }: Props) {
   }, [])
 
   return (
-    <header id="home" className="relative flex flex-col min-h-[70dvh] md:min-h-[90dvh] overflow-hidden">
+    <header id="home" className="relative flex flex-col min-h-[78dvh] overflow-hidden">
       {/* Hero background */}
       <div className="absolute inset-0 z-0" style={{ backgroundColor: "#FFFFB8" }}>
         <img 
@@ -48,7 +48,7 @@ export default function Hero({ ready }: Props) {
       </div>
 
       {/* HERO CONTENT */}
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-start text-center px-4 pt-8">
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-start text-center px-4 pt-4">
         <motion.div
           className="w-full max-w-6xl mx-auto space-y-6"
           initial={{ opacity: 0, y: 40, scale: 0.985 }}
@@ -60,9 +60,9 @@ export default function Hero({ ready }: Props) {
           }}
         >
           {/* Logo and mantras */}
-          <div className="mt-12 mx-auto max-w-4xl flex flex-col items-center">
+          <div className="mt-6 mx-auto max-w-4xl flex flex-col items-center">
             {/* Logo now placed inside the mantra box */}
-            <div className="mb-6 h-28 md:h-36 flex items-center justify-center">
+            <div className="mb-4 h-28 flex items-center justify-center">
               {ready ? (
                 <motion.img
                   layoutId="yogam-logo"
@@ -83,12 +83,12 @@ export default function Hero({ ready }: Props) {
               <p>{mantraBlocks.line1}</p>
             </div>
 
-            <div className="mt-6 font-sanskrit text-xl md:text-xl text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-4">
+            <div className="mt-4 font-sanskrit text-xl md:text-xl text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-4">
               <p>{mantraBlocks.a1}</p>
               <p>{mantraBlocks.a2}</p>
             </div>
 
-            <div className="mt-6 font-sanskrit text-xl md:text-xl text-black/80 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-4">
+            <div className="mt-4 font-sanskrit text-xl md:text-xl text-black/80 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] leading-relaxed max-w-3xl mx-auto font-bold px-4">
               <p>{mantraBlocks.p1}</p>
               <p>{mantraBlocks.p2}</p>
             </div>
